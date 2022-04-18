@@ -6,6 +6,7 @@
 
 :root{
     --primary-color: #e50914;
+    --dark-color: #141414;
 }
 body {
 	font-family: 'Arial', sans-serif;
@@ -90,10 +91,38 @@ a{
 }
 .btn-xl{
     background-color: var(--primary-color);
-    padding: 1rem 4rem;
+    padding: 0.8rem 3.8rem;
     font-size: 1.9rem;
     transition: opacity 0.3s ease-in;
 }
 .btn-xl:hover{
 opacity: 0.8;
 }
+
+.tabs{
+    background-color: var(--dark-color);
+    width: 100%;
+}
+i{
+    margin-bottom: 10px;
+}
+.tabs .container{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+ .tab-item, .tab-item, .tab-item{
+     flex-basis: 33.3%;
+    padding: 30px 0px;
+
+ }
+ .tab-item:hover, .tab-item:hover, .tab-item:hover{
+    /* border-bottom: 1px solid var(--primary-color); */
+    cursor:pointer;
+    color: #fff;
+ }
+ .tab-border{
+     border-bottom: 4px solid var(--primary-color);
+ }
