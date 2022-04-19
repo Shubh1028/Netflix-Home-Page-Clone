@@ -10,7 +10,6 @@
 }
 body {
 	font-family: 'Arial', sans-serif;
-	/* -webkit-font-smoothing: antialiased; */
 	background: #000;
 	color: #999;
 }
@@ -33,10 +32,7 @@ a{
 	height: 100%;
     z-index: 1;
     background: rgba(0, 0, 0, 0.6);
-	/* box-shadow: inset 120px 100px 250px #000000; */
     box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000
-
-
 }
 .showcase-top{
     height: 90px;
@@ -94,6 +90,7 @@ a{
     padding: 0.8rem 3.8rem;
     font-size: 1.9rem;
     transition: opacity 0.3s ease-in;
+    outline: none;
 }
 .btn-xl:hover{
 opacity: 0.8;
@@ -119,10 +116,84 @@ i{
 
  }
  .tab-item:hover, .tab-item:hover, .tab-item:hover{
-    /* border-bottom: 1px solid var(--primary-color); */
     cursor:pointer;
     color: #fff;
  }
  .tab-border{
      border-bottom: 4px solid var(--primary-color);
  }
+
+ .container-tabs{
+     max-width: 70%;
+     margin: auto;
+ }
+ .tab-content-1{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 400px;
+ }
+ .text-content{
+     flex-basis: 50%;
+     font-size: 1.7rem;
+     color: #fff;
+     padding: 2rem 0;
+ }
+ .text-content p{
+     margin-bottom: 20px;
+ }
+ .btn-tab{
+    display: inline-block;
+     padding: 0.6rem 2.5rem;
+     /* padding: 0.8rem 3.8rem; */
+     text-align: center;
+     font-size: 1.1rem;;
+     background-color: var(--primary-color);
+     text-transform:uppercase;
+     transition: opacity 0.4s ease-in;
+     outline: none;
+ }
+ .btn-tab:hover{
+     opacity: 0.8;
+ }
+ .image-content{
+    flex-basis: 50%;
+ }
+ .image-content img{
+     max-width: 90%;
+ }
+
+ .text-content-2{
+     display: flex;
+     padding: 2.9rem 0;
+ }
+ .tab-content-2 .text{
+     flex-basis: 65%;
+     font-size: 1.9rem;
+     color: #fff;
+ }
+ .btn-div{
+    flex-basis: 35%;
+    padding: 1.6rem  0;
+ }
+
+ .image-text-content{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     text-align: center;
+ }
+ .image-tab-2{
+     flex-basis: 32%;
+     /* border: 2px solid white; */
+ }
+ .image-tab-2 img{
+     max-width: 90%;
+ }
+ .image-tab-2 h3{
+     color: #fff;
+ }
+ .image-tab-2 p{
+margin: 20px 0;
+ }
+ 
